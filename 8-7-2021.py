@@ -19,8 +19,9 @@ class Solution(object):
         
         if root is None:
             return []
-        elif len(root.children) is 0:
-            return [[root.val]]      
+        elif (len(root.children) is 0) or (len(root.children) is root.children.count(None)):
+            return [[root.val]]
+
         else:
             while qu.qsize() is not 0:
                 temp = []
