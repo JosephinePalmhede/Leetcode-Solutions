@@ -1,4 +1,5 @@
 class Solution(object):
+    matrix = [[1,2],[2,3]]
     def matrixRankTransform(self, matrix):
         """
         :type matrix: List[List[int]]
@@ -22,10 +23,10 @@ class Solution(object):
 
         print("given matrix: ", matrix)
         #sort into ascending order the elements in the same row and column
-        #the rank of element i will be the position of element i in the array, given there are no                   duplicates.
+        #the rank of element i will be the position of element i in the array, given there are no duplicates.
         
         #collect like elements in a dictionary
-        #need to account for situation where there is a duplicate number but it is not in the same column or          row...
+        #need to account for situation where there is a duplicate number but it is not in the same column or row...
         for i in range(rows):
             for j in range(columns):
                 element = matrix[i][j]
@@ -58,5 +59,5 @@ class Solution(object):
                 (r, c) = d[key][i]
                 print(r, c)
             
-            
+        
         
