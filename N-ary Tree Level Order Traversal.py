@@ -1,9 +1,7 @@
 """
-# Definition for a Node.
-class Node(object)Use exit() or Ctrl-Z plus Return to exit
-en=None):
-        self.val = val
-        self.children = children
+Solution by Josephine Palmhede for August 6th, 2021 leetcode question.
+
+Given an n-ary tree, return the level order traversal of its nodes' values.
 """
 import Queue
 
